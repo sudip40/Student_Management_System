@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="admin.css" />
+    <title>Student</title>
+    <link rel="stylesheet" href="./styles/students.css">
+  </head>
+  <body>
+    <div id="navbar">
+      <h2 onclick="lec()">Lectures</h2>
+      <h2 onclick="ass()">Assignments</h2>
+
+      <h2 id="profile" onclick="display_profile()"></h2>
+    </div>
+    <div id="user_prof">
+      <form>
+        <h1>Change your profile details</h1>
+        <p>change username</p>
+        <input type="text" placeholder="" value="" required id="changename" />
+        <p>password</p>
+        <input
+          type="password"
+          placeholder=""
+          value=""
+          required
+          id="changepass"
+        />
+        <p>retype password</p>
+        <input type="password" placeholder="" value="" required id="retyped" />
+        <button onclick="changedata()">Save changes</button>
+        <button onclick="closebox()">X</button>
+      </form>
+    </div>
+
+    <div id="lectures">
+      <h1>Lectures</h1>
+    </div>
+    <div id="assignments">
+      <h1>Assignments</h1>
+    </div>
+  </body>
+</html>
+<script src="./scripts/student.js"></script>

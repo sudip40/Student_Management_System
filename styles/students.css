@@ -1,0 +1,97 @@
+body{
+  background-image: url("https://tattoocovenant.com/wp-content/uploads/2019/08/36801346-free-background-images.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#lectures,#assignments {
+        margin: auto;
+        width: 80%;
+        color: black;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+          rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        margin-top: 1%;
+        padding: 2%;
+      }
+
+      #lectures > div,
+      #assignments > div {
+        margin: 2%;
+        border-bottom: 1px solid gray;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: space-between;
+      }
+      h1 {
+        text-align: center;
+      }
+      #lectures > div > button,
+      #assignments > div > button {
+        background-color: green;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+          rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        font-size: 15px;
+      }
+      #assignments {
+        display: none;
+      }
+      #user_prof {
+        position: fixed;
+        width: 20%;
+        top: 8%;
+        right: 1%;
+        display: none;
+      }
+      #user_prof form {
+        width: 100%;
+      }
+      #user_prof input {
+        color: black;
+        padding: 0px;
+        border: 1px solid;
+      }
+      #user_prof p {
+        color: black;
+        font-size: 15px;
+      }
+      #navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5vh;
+        background-color: #2e9deb;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+            rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        padding: 0px 10px;
+    }
+    button {
+      color: rgb(255, 255, 255);
+      border: none;
+      padding: 2px;
+      background-color: #2eafeb59;
+      font-weight: bold;
+      height: 100%;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+          rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  form {
+    width: 30%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #2eafeb59;
+    padding: 2%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 3%;
+}
+h2{
+  color: white;
+}
+#lectures>div,#assignments>div{
+  display: flex;
+  justify-content: space-between;
+  background-color: #2eafeb59;
+}

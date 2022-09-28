@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lectures</title>
+    <link rel="stylesheet" href="./styles/admin.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <a href="admin.html">Students</a>
+      <a href="assignments.html">assignments</a>
+      <a href="lectures.html">lectures</a>
+      <a id="profile">Profile</a>
+    </div>
+    <div id="options">
+      <button onclick="create()">Create Lectures</button>
+      <button onclick="display()">Lectures</button>
+    </div>
+    <div id="add">
+      <form>
+        <h2>adding lectures</h2>
+        <select id="batch">
+          <option>Select batch</option>
+          <option value="FT_WEB 14">FT_WEB 14</option>
+          <option value="FT_WEB 15">FT_WEB 15</option>
+          <option value="FT_WEB 16">FT_WEB 16</option>
+          <option value="FT_WEB 17">FT_WEB 17</option>
+          <option value="FT_WEB 18">FT_WEB 18</option>
+          <option value="FT_WEB 19">FT_WEB 19</option>
+        </select>
+        <input type="text" id="topic" placeholder="Topic covered" />
+        <input type="text" placeholder="takenby" id="teacher" />
+        <input type="time" id="time" />
+        <input type="date" id="date"  />
+
+        <button onclick="create_lec()" id="ca">Create</button>
+      </form>
+    </div>
+    <div id="display">
+      <table>
+        <thead>
+          <tr>
+            <th>topic</th>
+            <th>batch</th>
+            <th>instructor</th>
+            <th>date</th>
+            <th>time</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </body>
+</html>
+<script src="./scripts/lectures.js"></script>

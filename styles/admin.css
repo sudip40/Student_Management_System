@@ -1,0 +1,127 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-transform: capitalize;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+h1,p {
+    color:aquamarine;
+    text-decoration: wavy;
+    text-decoration-line: underline;
+    text-decoration-color: aqua;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 50px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    background-color: #2e9deb;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 0px 10px;
+}
+
+a,
+p {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+body{
+    background-image: url("https://tattoocovenant.com/wp-content/uploads/2019/08/36801346-free-background-images.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+button {
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 2px;
+    background-color: #2eafeb59;
+    font-weight: bold;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+table {
+    width: 100%;
+}
+
+#display {
+    display: none;
+}
+
+th,
+td {
+    text-align: center;
+    width: 1%;
+    height: 50px;
+    margin: 2%;
+    background-color: #2eafeb59;
+}
+
+form {
+    width: 30%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #2eafeb59;
+    padding: 2%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 3%;
+}
+
+input,
+select {
+    height: 15%;
+    margin-bottom: 2%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    padding-left: 3%;
+}
+
+.remove:hover {
+    background-color: rgba(128, 0, 0, 0.199);
+}
+
+tr:hover,
+button:hover {
+    background-color: #2eafeb59;
+    color: white;
+}
+
+th {
+    background-color: #2e9deb;
+    color: white;
+}
+
+#options {
+    display: flex;
+    justify-content: space-between;
+}
+
+#options>button {
+    padding: 1%;
+    margin-bottom: 3%;
+}
+
+#ca{
+    padding: 10px 0px;
+}
+h2{
+    text-align: center;
+    color: aquamarine;
+    margin-bottom: 20px;
+}

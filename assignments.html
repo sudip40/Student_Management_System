@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <link rel="stylesheet" href="./styles/admin.css" />
+    <style>
+     
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <a href="admin.html">Students</a>
+      <a href="assignments.html">assignments</a>
+      <a href="lectures.html">lectures</a>
+      <a id="profile">Profile</a>
+    </div>
+  </body>
+  <div id="options">
+    <button onclick="create()">Create Assignments</button>
+    <button onclick="display()">Assignments</button>
+     
+    </select>
+  </div>
+  <div id="create">
+   
+    <form>
+       <h2>Creating new Assignment</h2>
+    <select id="batch">
+      <option>Select batch</option>
+      <option value="FT_WEB 14">FT_WEB 14</option>
+      <option value="FT_WEB 15">FT_WEB 15</option>
+      <option value="FT_WEB 16">FT_WEB 16</option>
+      <option value="FT_WEB 17">FT_WEB 17</option>
+      <option value="FT_WEB 18">FT_WEB 18</option>
+      <option value="FT_WEB 19">FT_WEB 19</option>
+    </select>
+    
+      <input type="text" placeholder="Topic" id="topic" />
+      <input type="text" placeholder="discription" id="disc" />
+
+      <input type="date" id="date" placeholder="date" />
+      <input type="time" id="time">
+      <button id="ca" onclick="create_ass()">Create</button>
+      </form>
+    </div>
+  </div>
+  <div id="display">
+    <table>
+      <thead>
+        <tr>
+          <th>topic</th>
+          <th>batch</th>
+          <th>date</th>
+          <th>time</th>
+          <th>remove</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</html>
+<script src="./scripts/assignments.js"></script>

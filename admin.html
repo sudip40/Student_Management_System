@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/admin.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <a href="admin.html">Students</a>
+      <a href="assignments.html">assignments</a>
+      <a href="lectures.html">lectures</a>
+      <a id="profile">Profile</a>
+    </div>
+    <div id="options">
+      <button onclick="add()">Add students</button>
+      <button onclick="list_students()">Student List</button>
+    </div>
+    <div id="add">
+      <form>
+        <h2>Add students</h2>
+        <input type="text" id="name" placeholder="Student Name" />
+        <input type="text" placeholder="Students Id" id="id" />
+        <select id="batch">
+          <option>Select batch</option>
+          <option value="FT_WEB 14">FT_WEB 14</option>
+          <option value="FT_WEB 15">FT_WEB 15</option>
+          <option value="FT_WEB 16">FT_WEB 16</option>
+          <option value="FT_WEB 17">FT_WEB 17</option>
+          <option value="FT_WEB 18">FT_WEB 18</option>
+          <option value="FT_WEB 19">FT_WEB 19</option>
+        </select>
+        <input type="email" id="email" placeholder="Student Email" />
+        <input type="submit" />
+      </form>
+    </div>
+    <div id="display">
+      <table>
+        <thead>
+          <tr>
+            <th>student name</th>
+            <th>student id</th>
+            <th>student batch</th>
+            <th>student email</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </body>
+</html>
+<script src="./scripts/admin.js"></script>
